@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# ExChange widget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Виджет на [Vercel](https://exchange-widget-brown.vercel.app/).
 
-## Available Scripts
+
 
 

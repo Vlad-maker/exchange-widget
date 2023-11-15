@@ -1,4 +1,4 @@
-import "./SwapBtn.css";
+import "./SwapBtn.scss";
 
 function SwapBtn({ currenciesPosition, setCurrenciesPosition }) {
   return (

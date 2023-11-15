@@ -1,4 +1,4 @@
-import "./AddressBlock.css";
+import "./AddressBlock.scss";
 
 function AddressBlock({ label, btnName }) {
   return (

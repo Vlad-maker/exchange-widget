@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./Header.scss";
 
 function Header({ title, caption }) {
   return (

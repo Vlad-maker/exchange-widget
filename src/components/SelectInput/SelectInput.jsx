@@ -1,19 +1,18 @@
 import Select from "react-select";
 
-import "./SelectInput.css";
+import "./SelectInput.scss";
 
 function SelectInput({ children, options, setOptionValue }) {
-  const icon = (color = "transparent") => ({
-    alignItems: "center",
-    display: "flex",
+  // const icon = (color = "transparent") => ({
+  //   textTransform: "uppercase",
 
-    ":before": {
-      //   backgroundImage: 'url("../../assets/icons/test.svg")',
-      content: '" "',
-      display: "block",
-      marginRight: 30,
-    },
-  });
+  //   ":before": {
+  //     //   backgroundImage: 'url("../../assets/icons/test.svg")',
+  //     content: '" "',
+  //     display: "block",
+  //     marginRight: 30,
+  //   },
+  // });
 
   const SelectInputStyle = {
     control: (baseStyles) => ({
@@ -36,8 +35,14 @@ function SelectInput({ children, options, setOptionValue }) {
       textTransform: "uppercase",
       cursor: "pointer",
     }),
-    placeholder: (styles) => ({ ...styles, ...icon() }),
-    singleValue: (styles, { data }) => ({ ...styles, ...icon() }),
+    // placeholder: (baseStyles) => ({
+    //   ...baseStyles,
+    // }),
+    singleValue: (baseStyles) => ({
+      ...baseStyles,
+      textTransform: "uppercase",
+      marginLeft: 30,
+    }),
   };
 
   return (
@@ -48,6 +53,13 @@ function SelectInput({ children, options, setOptionValue }) {
           setOptionValue(option.value);
         }}
         styles={SelectInputStyle}
+        formatOptionLabel={(options) => (
+          <div className="option">
+            <img src={options.image} alt="icon" />
+            <span className="option__label">{options.label}</span>
+            <span className="option__name">{options.name}</span>
+          </div>
+        )}
       />
       {children}
     </>

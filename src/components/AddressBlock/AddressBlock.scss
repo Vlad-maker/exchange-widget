@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 13px;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.address-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 723px;
+}
+
+.address-label {
+  align-self: flex-start;
+}
+
+.address-input {
+  height: 46px;
+  border: 1px solid #e3ebef;
+  background-color: #f6f7f8;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.address-input:focus {
+  outline: none;
+}
+
+.address-btn {
+  padding: 15px 59px;
+  border: none;
+  background-color: #11b3fe;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  max-height: 50px;
+  transition: 0.3s;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.address-btn:hover {
+  background-color: #0095e0;
+  cursor: pointer;
+}

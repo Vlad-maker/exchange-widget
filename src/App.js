@@ -9,7 +9,7 @@ import SelectInput from "./components/SelectInput/SelectInput";
 import MinExchangeWarning from "./components/MinExchangeWarning/MinExchangeWarning";
 import AddressBlock from "./components/AddressBlock/AddressBlock";
 
-import "./App.css";
+import "./App.scss";
 
 const url = "https://api.changenow.io/v1/currencies?active=true";
 
@@ -18,10 +18,10 @@ function App() {
   const [minimalExchange, setMinimalExchange] = useState(null);
   const [currenciesPosition, setCurrenciesPosition] = useState(true);
 
-  const [optionValue, setOptionValue] = useState(null);
-  const [optionValue2, setOptionValue2] = useState(null);
   const [inputValue, setInputValue] = useState("");
   const [inputValue2, setInputValue2] = useState("");
+  const [optionValue, setOptionValue] = useState(null);
+  const [optionValue2, setOptionValue2] = useState(null);
 
   const getAllCurrencies = () => {
     return axios.get(url).then((res) => setAllCurrencies(res.data));
@@ -32,7 +32,7 @@ function App() {
       .get(
         `https://api.changenow.io/v1/min-amount/${optionValue}_${optionValue2}?api_key=c9155859d90d239f909d2906233816b26cd8cf5ede44702d422667672b58b0cd`
       )
-      .then((res) => setMinimalExchange(res.data));
+      .then((res) => setMinimalExchange(res?.data));
   };
 
   const getExchangeAmount = () => {
@@ -41,7 +41,7 @@ function App() {
         .get(
           `https://api.changenow.io/v1/exchange-amount/${inputValue}/${optionValue}_${optionValue2}?api_key=c9155859d90d239f909d2906233816b26cd8cf5ede44702d422667672b58b0cd`
         )
-        .then((res) => setInputValue2(res.data.estimatedAmount));
+        .then((res) => setInputValue2(res?.data?.estimatedAmount));
     } else setInputValue2("-");
   };
 
@@ -66,9 +66,13 @@ function App() {
       allCurrencies.map((item) => ({
         value: item.ticker,
         label: item.ticker,
+        image: item.image,
+        name: item.name,
       })) || []
     );
   }, [allCurrencies]);
+
+  console.log(minimalExchange);
 
   return (
     <div className="App">

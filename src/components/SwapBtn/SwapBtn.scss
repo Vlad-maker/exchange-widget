@@ -1,0 +1,17 @@
+.swap__btn {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../assets/icons/swap.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    transform: rotate(90deg);
+    align-self: flex-end;
+  }
+}

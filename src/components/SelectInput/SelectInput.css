@@ -1,0 +1,20 @@
+/* Отключени стандартного разделителя react-select */
+.css-1u9des2-indicatorSeparator {
+    display: none !important;
+}
+
+.css-1nmdiq5-menu {
+    width: 436px !important;
+    left: -286px;
+    top: 43px !important;
+    
+}
+
+.css-1n6sfyn-MenuList {
+    background-color: #F6F7F8;
+}
+
+.css-1hnlc0f-option {
+
+}
+

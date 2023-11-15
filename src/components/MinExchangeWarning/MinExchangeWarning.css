@@ -1,0 +1,13 @@
+.warning__min {
+    height: 15px;
+    margin: 4px 0 0 0;
+}
+  
+.warning__min-message {
+  margin: 0;
+  text-align: start;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E03F3F;
+}

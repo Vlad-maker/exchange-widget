@@ -1,9 +1,9 @@
-import "./MinExchangeWarning.css";
+import "./MinExchangeWarning.scss";
 
-function MinExchangeWarning({ inputValue2, minimalExchange }) {
+function MinExchangeWarning({ inputValue, minimalExchange }) {
   return (
     <div className="warning__min">
-      {inputValue2 === "-" ? (
+      {inputValue !== "" && inputValue < minimalExchange?.minAmount ? (
         <p className="warning__min-message">Min: {minimalExchange.minAmount}</p>
       ) : null}
     </div>

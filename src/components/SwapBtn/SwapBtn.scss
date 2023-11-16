@@ -10,7 +10,7 @@
   background-position-x: 50%;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     transform: rotate(90deg);
     align-self: flex-end;
   }

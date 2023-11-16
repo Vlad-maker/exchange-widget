@@ -1,6 +1,12 @@
-# ExChange widget
+## ExChange widget
 
-Виджет на [Vercel](https://exchange-widget-brown.vercel.app/).
+Виджет для создания [обмена](https://exchange-widget-brown.vercel.app/).
+
+### Использовал библиотеки:
+
+[Axios](https://axios-http.com/ru/)
+[React-select](https://react-select.com/home)
+[SCSS/SASS](https://sass-lang.com/)
 
 
 

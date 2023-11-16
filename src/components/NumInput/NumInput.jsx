@@ -1,4 +1,4 @@
-import "./NumInput.css";
+import "./NumInput.scss";
 
 function NumInput({ children, inputValue, setInputValue }) {
   return (

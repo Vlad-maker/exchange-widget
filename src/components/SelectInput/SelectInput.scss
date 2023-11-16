@@ -6,13 +6,38 @@
 }
 
 .css-1nmdiq5-menu {
-  width: 436px !important;
+  width: 435px !important;
   left: -286px;
   top: 43px !important;
 
+  @media (max-width: 989px) {
+    width: 324px !important;
+    left: -174px;
+  }
+
   @media (max-width: 767px) {
-    width: 290px !important;
-    left: -140px;
+    width: 448px !important;
+    left: -300px;
+  }
+
+  @media (max-width: 479px) {
+    width: 400px !important;
+    left: -252px;
+  }
+
+  @media (max-width: 430px) {
+    width: 391px !important;
+    left: -242px;
+  }
+
+  @media (max-width: 418px) {
+    width: 341px !important;
+    left: -192px;
+  }
+
+  @media (max-width: 374px) {
+    width: 288px !important;
+    left: -138px;
   }
 }
 
@@ -20,11 +45,12 @@
   background-color: $input_bg;
 }
 
-.css-1hnlc0f-option {
-}
-
 .option {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.option__name {
+  color: $option_name;
 }

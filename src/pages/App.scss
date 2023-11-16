@@ -1,4 +1,4 @@
-@import "./styles/variables";
+@import "../styles/variables";
 
 .App {
   text-align: center;
@@ -17,13 +17,6 @@
   }
 }
 
-.input__span {
-  width: 1px;
-  height: 40px;
-  background-color: #e3ebef;
-  align-self: center;
-}
-
 .app__wrapper {
   width: 100%;
 }
@@ -40,13 +33,10 @@
   margin-bottom: 0px;
   gap: 27px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex-direction: column;
+    gap: 16px;
   }
-}
-
-.body__exchange--reverse {
-  flex-direction: row-reverse;
 }
 
 .body__exchange-wrapper {
@@ -54,22 +44,16 @@
   max-width: 450px;
   width: 100%;
   height: 50px;
-  border: 1px solid #e3ebef;
+  border: 1px solid $border;
   border-radius: 5px;
-  background-color: #f6f7f8;
+  background-color: $input_bg;
 }
 
-.disabled__warning {
-  height: 15px;
-  margin: 8px 0 0 auto;
-  max-width: 205px;
-  display: flex;
-  justify-content: center;
-}
-
-.disabled__warning-message {
-  margin: 0;
-  text-align: start;
-  font-size: 12px;
-  color: $warning;
+.input__span {
+  width: 1px;
+  height: 40px;
+  background-color: $border;
+  align-self: center;
+  position: relative;
+  z-index: 5;
 }

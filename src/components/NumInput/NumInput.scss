@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.input {
+  padding-left: 16px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: $input_bg;
+  max-width: 290px;
+  width: 100%;
+  color: $black;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.input:focus {
+  outline: none;
+}

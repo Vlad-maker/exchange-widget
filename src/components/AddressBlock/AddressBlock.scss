@@ -7,7 +7,7 @@
   margin-top: 13px;
   gap: 32px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     gap: 16px;
   }
@@ -16,8 +16,8 @@
 .address-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 723px;
+  width: 100%;
 }
 
 .address-label {
@@ -26,10 +26,11 @@
 
 .address-input {
   height: 46px;
-  border: 1px solid #e3ebef;
-  background-color: #f6f7f8;
+  border: 1px solid $border;
+  background-color: $input_bg;
   border-radius: 5px;
   margin-top: 8px;
+  padding-left: 16px;
 }
 
 .address-input:focus {
@@ -38,17 +39,16 @@
 
 .address-btn {
   padding: 15px 59px;
+  height: 50px;
   border: none;
-  background-color: #11b3fe;
-  color: #fff;
+  color: $white;
+  background-color: $blue;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   border-radius: 5px;
-  max-height: 50px;
   transition: 0.3s;
 
   @media (max-width: 767px) {
@@ -57,6 +57,6 @@
 }
 
 .address-btn:hover {
-  background-color: #0095e0;
+  background-color: $btn_hover;
   cursor: pointer;
 }

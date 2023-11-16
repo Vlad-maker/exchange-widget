@@ -2,7 +2,7 @@
 
 Виджет для создания [обмена](https://exchange-widget-brown.vercel.app/).
 
-### Использовал библиотеки:
+***Использовал библиотеки:***
 
 [Axios](https://axios-http.com/ru/)
 

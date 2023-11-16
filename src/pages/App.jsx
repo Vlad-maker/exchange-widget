@@ -81,32 +81,39 @@ function App() {
     setInputValue2("");
   }, [error]);
 
+  useEffect(() => {
+    if (inputValue !== "" && inputValue < minimalExchange?.minAmount) {
+      setInputValue2("-");
+    }
+  }, [inputValue]);
+
   return (
     <div className="App">
       <div className="app__wrapper">
         <Header title="Crypto Exchange" caption="Exchange fast and easy" />
-
         <form className="body">
           <div className="body__exchange">
             <div className="body__exchange-wrapper">
-              <NumInput inputValue={inputValue} setInputValue={setInputValue} />
+              <NumInput
+                inputValue={inputValue}
+                setInputValue={setInputValue}
+                id="get-input"
+              />
               <span className="input__span" />
               <SelectInput options={options} setOptionValue={setOptionValue} />
             </div>
-
             <SwapBtn />
-
             <div className="body__exchange-wrapper">
               <NumInput
                 inputValue={inputValue2}
                 setInputValue={setInputValue2}
                 value={inputValue2}
+                id="set-input"
               />
               <span className="input__span" />
               <SelectInput options={options} setOptionValue={setOptionValue2} />
             </div>
           </div>
-
           <MinExchangeWarning
             inputValue={inputValue}
             minimalExchange={minimalExchange}

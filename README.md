@@ -9,7 +9,3 @@
 [React-select](https://react-select.com/home)
 
 [SCSS/SASS](https://sass-lang.com/)
-
-
-
-

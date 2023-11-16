@@ -3,17 +3,6 @@ import Select from "react-select";
 import "./SelectInput.scss";
 
 function SelectInput({ children, options, setOptionValue }) {
-  // const icon = (color = "transparent") => ({
-  //   textTransform: "uppercase",
-
-  //   ":before": {
-  //     //   backgroundImage: 'url("../../assets/icons/test.svg")',
-  //     content: '" "',
-  //     display: "block",
-  //     marginRight: 30,
-  //   },
-  // });
-
   const SelectInputStyle = {
     control: (baseStyles) => ({
       ...baseStyles,
@@ -35,9 +24,6 @@ function SelectInput({ children, options, setOptionValue }) {
       textTransform: "uppercase",
       cursor: "pointer",
     }),
-    // placeholder: (baseStyles) => ({
-    //   ...baseStyles,
-    // }),
     singleValue: (baseStyles) => ({
       ...baseStyles,
       textTransform: "uppercase",

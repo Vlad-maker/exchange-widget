@@ -70,13 +70,7 @@ function App() {
   }, [optionValue, optionValue2]);
 
   useEffect(() => {
-    if (
-      minimalExchange &&
-      inputValue &&
-      optionValue &&
-      optionValue2 &&
-      !error
-    ) {
+    if (inputValue && optionValue && optionValue2 && !error) {
       getExchangeAmount();
     }
   }, [inputValue, optionValue, optionValue2]);

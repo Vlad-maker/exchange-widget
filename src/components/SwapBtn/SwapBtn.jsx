@@ -1,9 +1,9 @@
 import "./SwapBtn.scss";
 
-function SwapBtn({ currenciesPosition, setCurrenciesPosition }) {
+function SwapBtn() {
   return (
     <button
-      onClick={() => setCurrenciesPosition(!currenciesPosition)}
+      // onClick={() => setCurrenciesPosition(!currenciesPosition)}
       className="swap__btn"
       type="button"
     ></button>

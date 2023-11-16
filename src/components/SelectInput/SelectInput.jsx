@@ -2,7 +2,7 @@ import Select from "react-select";
 
 import "./SelectInput.scss";
 
-function SelectInput({ children, options, setOptionValue }) {
+function SelectInput({ children, options, setOptionValue, value }) {
   const SelectInputStyle = {
     control: (baseStyles) => ({
       ...baseStyles,
@@ -39,6 +39,7 @@ function SelectInput({ children, options, setOptionValue }) {
           setOptionValue(option.value);
         }}
         styles={SelectInputStyle}
+        value={value}
         formatOptionLabel={(options) => (
           <div className="option">
             <img src={options.image} alt="icon" />

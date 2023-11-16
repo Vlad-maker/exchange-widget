@@ -1,6 +1,6 @@
 ## ExChange widget
 
-Виджет для создания [обмена](https://exchange-widget-brown.vercel.app/).
+[Виджет](https://exchange-widget-brown.vercel.app/) для создания обмена криптовалют.
 
 ***Использовал библиотеки:***
 
